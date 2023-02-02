@@ -33,6 +33,7 @@ body{
     width: 220px;
     height: 35px;
     border: 1px solid black;
+    /* display: flex; */
 }
 
 .navbuttons-large{
@@ -79,29 +80,37 @@ a{
     
 }
 
+.centered{
+    text-align: center;
+}
+
 
 /* ==============================Navbar =================================== */
 .nav-container{
     
-    width: 100%;
-    max-width: 1580px;
+    width: auto;
+    /* max-width: 1580px; */
+
+    display: flex;
+    
+    
+    /* border: 1px solid black; */
     
     
     
 
 }
 
-.navwrapper{
+/* .navwrapper{
     
     
     display: flex;
     
-}
+} */
 
 .navlink-wrapper{
-    width: 70%;
-    
-    
+    display: flex;
+    flex-wrap: wrap;
     
     
     
@@ -110,7 +119,8 @@ a{
 .navbutton-container{
     /* width: 20%; */
    
-    display: flex;
+    /* display: flex; */
+    
     /* flex-direction: column; */
     /* margin-left: auto; */
     
@@ -119,24 +129,39 @@ a{
 
 
 .navlink-logo{
-    
+    width: 150px;
+    height: auto;
+   
+
+    /* Adjusts the rpmh logo in nav container  */
     
     
 }
 
-.navlink-logo img{
+/* .navlink-logo img{
     
     width: 150px;
     height: auto;
     margin-top: .5em;
+    border: 1px solid black;
     
-}
+} */
 
-.navlinks1{
+.navlinks{
     
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    
+    font-size: 1.5rem;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-decoration: none;
+    color: var(--color-FontWht);
+    font-family: sans-serif;
+    
+    
+    
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
     
     
     
@@ -144,9 +169,20 @@ a{
     
 }
 
-.navlinks1 a{
-    padding-right: 3rem;
+
+
+.navlinks a{
+    /* padding-right: 3rem; */
+    font-size: 1.5rem;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-decoration: none;
+    color: var(--color-FontWht);
+    font-family: sans-serif;
+
 }
+
+/* Fix Dependency on the nav box links in the content page */
 
 /* .navlinks1 a{
     width: 15%;
@@ -159,11 +195,11 @@ a{
     
 } */
 
-.navlinks2{
+/* .navlinks2{
     
     
     text-align: center;
-}
+} */
 
 .navbox{
     border: 1px solid black;
@@ -191,13 +227,15 @@ a{
     
 }
 
-.navlinks2 a{
+/* This adjusts the symbols in the content page on home page */
+
+/* .navlinks2 a{
     font-size: 1.5rem;
     padding-right: 1em;
     padding-left: 1em;
     text-decoration: none;
     color: var(--color-FontWht);
-    font-family: sans-serif;
+    font-family: sans-serif; */
 
 /* -------------------- nav bar row 1 ------------------------------ */
 /* .navrow1{
@@ -211,12 +249,12 @@ a{
 
 
 
-.navbutton1{
+/* .navbutton1{
     
     
     
     display: flex;
-}
+} */
 
 
 
@@ -253,14 +291,14 @@ a{
 .navrow2 img{
     width: 7%;
     /* width: 100px; */
-    margin-left: 1em;
+    /* margin-left: 1em; */
 } 
 
 
 }
 .navbutton2{
-    margin-right: 3em;
-    display: flex;
+    /* margin-right: 3em;
+    display: flex; */
     
 }
 
