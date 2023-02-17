@@ -9,6 +9,7 @@
 }
 body{
     margin: 0;
+    max-width: 1280;
     background-color: var(--color-blue);
     
 }
@@ -64,10 +65,28 @@ body{
     color: var(--color-H3);
     margin-top: .5em;
     
-    
-    
-    
+      
 }
+
+.navbuttons-box2{
+    font-size: 2rem;
+    background-color: var(--color-Golden1);
+    text-decoration: none;
+    
+    
+    padding-left: .5rem;
+    
+    
+    color: var(--color-H3);
+    margin-top: .5em;
+    
+      
+}
+
+
+
+
+
 
 a{
     /* width: 15%; */
@@ -84,122 +103,46 @@ a{
     text-align: center;
 }
 
+.justified-text{
+    text-align: justify;
+}
 
 /* ==============================Navbar =================================== */
 .nav-container{
     
     width: auto;
-    /* max-width: 1580px; */
-
-    display: flex;
-    
-    
-    /* border: 1px solid black; */
     
     
     
-
+    
+ 
 }
-
-/* .navwrapper{
-    
-    
-    display: flex;
-    
-} */
 
 .navlink-wrapper{
     display: flex;
-    flex-wrap: wrap;
-    
-    
-    
-}
+    margin: auto;
+    width: 80%;
 
-.navbutton-container{
-    /* width: 20%; */
+    
+    
+
+    
    
-    /* display: flex; */
-    
-    /* flex-direction: column; */
-    /* margin-left: auto; */
-    
 }
-
-
 
 .navlink-logo{
+    display: flex;
+        
+}
+
+
+
+.navlink-logo img{
     width: 150px;
     height: auto;
-   
-
-    /* Adjusts the rpmh logo in nav container  */
-    
-    
+     
 }
 
-/* .navlink-logo img{
-    
-    width: 150px;
-    height: auto;
-    margin-top: .5em;
-    border: 1px solid black;
-    
-} */
-
-.navlinks{
-    
-    text-align: center;
-    
-    font-size: 1.5rem;
-    padding-right: 1em;
-    padding-left: 1em;
-    text-decoration: none;
-    color: var(--color-FontWht);
-    font-family: sans-serif;
-    
-    
-    
-    /* margin-top: 15px;
-    margin-bottom: 15px; */
-    
-    
-    
-    
-    
-}
-
-
-
-.navlinks a{
-    /* padding-right: 3rem; */
-    font-size: 1.5rem;
-    padding-right: 1em;
-    padding-left: 1em;
-    text-decoration: none;
-    color: var(--color-FontWht);
-    font-family: sans-serif;
-
-}
-
-/* Fix Dependency on the nav box links in the content page */
-
-/* .navlinks1 a{
-    width: 15%;
-    font-size: 1.5rem;
-    
-    text-decoration: none;
-    color: var(--color-FontWht);
-    font-family: sans-serif;
-    margin-left: 55px;
-    
-} */
-
-/* .navlinks2{
-    
-    
-    text-align: center;
-} */
 
 .navbox{
     border: 1px solid black;
@@ -218,6 +161,15 @@ a{
     margin-left: .5em;
     margin-top: 1em;
     
+    
+}
+
+.navbox-title:nth-of-type(4){
+    margin-right: 4em;
+    margin-left: .5em;
+    margin-top: 1em;
+   
+    
 }
 
 .navbox-symbol{
@@ -228,89 +180,97 @@ a{
 }
 
 /* This adjusts the symbols in the content page on home page */
+.navlinks-super{
+    width: auto;
+    
+     
+}
 
-/* .navlinks2 a{
-    font-size: 1.5rem;
-    padding-right: 1em;
-    padding-left: 1em;
-    text-decoration: none;
-    color: var(--color-FontWht);
-    font-family: sans-serif; */
 
-/* -------------------- nav bar row 1 ------------------------------ */
-/* .navrow1{
+.navlinks ul li{
+    
+    list-style-type: none;
+    padding: .5em;
+    
+}
+
+.navlinks ul li a:hover{
+    color: var(--color-Golden1);
+}
+
+.navlinks ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
     width: 100%;
-    display: flex;
-    margin-bottom: .5em;
-    margin-top: .5em;
-    border: 1px solid black;
-    
-} */
-
-
-
-/* .navbutton1{
-    
-    
-    
-    display: flex;
-} */
-
-
-
-
-/* .navbutton1 a{
-    font-size: 2rem;
-    background-color: var(--color-Golden1);
-    text-decoration: none;
+    background-color: white;
     border-radius: 10px;
-    padding: .5rem;
-    margin-left: 10px;
-    color: var(--color-H3);
-    
-    
-} */
-
-
-
-
-
-/* Above CSS needs to be used to replace .navbutton1 a and .navbutton2 a and etc */
-
-/* ----------------------------navbar row 2------------------ */
-/* .navrow2{
-    margin-right: 0;
-    display: flex;
-    align-items: center;
-    
-    
-    
-    
 }
 
-.navrow2 img{
-    width: 7%;
-    /* width: 100px; */
-    /* margin-left: 1em; */
-} 
+@media (max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
 
+    .navlinks{
+        
+        display: none;
+    }
 
-}
-.navbutton2{
-    /* margin-right: 3em;
-    display: flex; */
+    .navlink-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlinks-super{
+        width: 100%;
+    }
+    .navlinks ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navlinks li{
+        text-align: center;
+        padding: 1em .5em;
+    }
+    .navsuperportals{
+        width: 100%;
+        
+        
+    }
+    .navbuttons{
+        margin: auto;
+        margin-bottom: .5em;
+
+    }
+    .navlink-logo{
+        width: 100%;
+        /* margin: auto; */
+        justify-content: center;
+    }
+   
+
+    .navlinks.active{
+        display: flex;
+    }
+
+   
     
-}
 
-/* .navbutton2 a{
-    font-size: 2rem;
-    background-color: var(--color-Golden1);
-    text-decoration: none;
-    border-radius: 10px;
-    padding: .5rem;
-    margin-left: 10px;
-    color: var(--color-H3);
-} */
+}
 
 /* -------------------------content box 1 --------------------------------- */
 
@@ -430,10 +390,10 @@ p{
     width: 100%;
     
     margin-top: -35px;
-    
-    
-    
+       
 }
+
+
 
 .content-frame2{
     width: 90%;
@@ -443,6 +403,7 @@ p{
     margin-top: .25rem;
     margin-bottom: 1rem;
     padding: .5em;
+    
 }
 .content-frame2 h3{
     font-size: 2rem;
@@ -472,6 +433,11 @@ p{
     font-size: 22px;
     color: var(--color-FontWht);
     font-family: sans-serif;
+    
+}
+.content2-content{
+    
+    text-align: center;
 }
 
 
