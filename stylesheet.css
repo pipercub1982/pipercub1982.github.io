@@ -27,14 +27,20 @@ body{
     background-color: var(--color-Golden1);
     text-decoration: none;
     border-radius: 10px;
-    padding: .5rem;
+    /* padding: .2rem; */
     margin-left: 10px;
-    color: var(--color-H3);
-    margin-top: .5em;
-    width: 220px;
-    height: 35px;
+    /* color: var(--color-H3); */
+    margin-top: .2em;
+    width: 153px;
+    padding-top: .1em;
+    padding-left: .1em;
+    padding-right: .1em;
+
+    height: 50px;
     border: 1px solid black;
-    /* display: flex; */
+    text-align: center;
+    
+   
 }
 
 .navbuttons-large{
@@ -88,6 +94,7 @@ body{
 
 
 
+
 a{
     /* width: 15%; */
     font-size: 1.5rem;
@@ -97,6 +104,14 @@ a{
     font-family: sans-serif;
        
     
+}
+
+.navbuttons a{
+    color: var(--color-H3);
+}
+
+.navbuttons a:hover{
+    color: var(--color-FontWht);
 }
 
 .centered{
@@ -112,6 +127,9 @@ a{
     
     width: auto;
     
+   
+    
+    
     
     
     
@@ -122,6 +140,8 @@ a{
     display: flex;
     margin: auto;
     width: 80%;
+    height: auto;
+    
 
     
     
@@ -132,6 +152,8 @@ a{
 
 .navlink-logo{
     display: flex;
+    
+    
         
 }
 
@@ -145,7 +167,7 @@ a{
 
 
 .navbox{
-    border: 1px solid black;
+    
     display: flex;
     background-color: var(--color-Golden1);
     opacity: 75%;
@@ -153,6 +175,8 @@ a{
     height: 120px;
     border-radius: 10px;
     margin-top: 1rem;
+
+    
     
 }
 
@@ -160,6 +184,7 @@ a{
     margin-right: 4em;
     margin-left: .5em;
     margin-top: 1em;
+    
     
     
 }
@@ -183,7 +208,16 @@ a{
 .navlinks-super{
     width: auto;
     
+    
      
+}
+
+.navsuperportals{
+    
+    
+    
+    
+    
 }
 
 
@@ -191,6 +225,7 @@ a{
     
     list-style-type: none;
     padding: .5em;
+    
     
 }
 
@@ -220,78 +255,31 @@ a{
     border-radius: 10px;
 }
 
-@media (max-width: 600px){
-    .toggle-button{
-        display: flex;
-    }
 
-    .navlinks{
-        
-        display: none;
-    }
-
-    .navlink-wrapper{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navlinks-super{
-        width: 100%;
-    }
-    .navlinks ul{
-        width: 100%;
-        flex-direction: column;
-    }
-    .navlinks li{
-        text-align: center;
-        padding: 1em .5em;
-    }
-    .navsuperportals{
-        width: 100%;
-        
-        
-    }
-    .navbuttons{
-        margin: auto;
-        margin-bottom: .5em;
-
-    }
-    .navlink-logo{
-        width: 100%;
-        /* margin: auto; */
-        justify-content: center;
-    }
-   
-
-    .navlinks.active{
-        display: flex;
-    }
-
-   
-    
-
-}
 
 /* -------------------------content box 1 --------------------------------- */
 
 .content-box-1{
     
-    width: 100%;
+    width: auto;
     
     display: flex;
-    border: 1px solid black;
+   
     background-image: url("Images/hospital-rpmh.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     height: 680px;
+    justify-content: right;
+    
 }
 
 .content-1-col1{
     
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
     
     
 }
@@ -315,7 +303,7 @@ h3{
 }
 .content1-col2{
     
-    width: 15%;
+    /* width: 15%; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -697,5 +685,64 @@ h4{
     font-family: sans-serif;
 }
 
+/* =========================================== Meda Queries ========================================================================= */
 
+@media (max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
 
+    .navlinks{
+        
+        display: none;
+    }
+
+    .navlink-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlinks-super{
+        width: 100%;
+    }
+    .navlinks ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navlinks li{
+        text-align: center;
+        padding: 1em .5em;
+    }
+    .navsuperportals{
+        width: 100%;
+        
+        
+        
+        
+    }
+    .navbuttons{
+        margin: auto;
+        margin-bottom: .5em;
+
+    }
+    .navlink-logo{
+        width: 100%;
+        /* margin: auto; */
+        justify-content: center;
+    }
+   
+
+    .navlinks.active{
+        display: flex;
+    }
+
+    .content-box-1{
+        background-image: url("Images/hospital-rpmh-wo-letters.JPG");
+        justify-content: center;
+        
+    }
+
+   
+    
+
+}
